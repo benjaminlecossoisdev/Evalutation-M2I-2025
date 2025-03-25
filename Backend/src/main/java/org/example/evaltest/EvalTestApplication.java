@@ -8,7 +8,6 @@ public class EvalTestApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(EvalTestApplication.class, args);
-        System.out.println("YOLO");
     }
 
 }
