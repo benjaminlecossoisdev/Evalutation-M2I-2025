@@ -1,7 +1,7 @@
 services:
 
   frontend:
-    image: blecossois/mon-frontend
+    image: blecossois/mon-frontend:latest
     ports:
       - "80:80"
     networks:
@@ -10,7 +10,7 @@ services:
       - backend
 
   backend:
-    image: blecossois/mon-backend
+    image: blecossois/mon-backend:latest
     ports:
       - "8080:8080"
     volumes:
