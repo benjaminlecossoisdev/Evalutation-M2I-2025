@@ -51,7 +51,7 @@ jobs:
           context: .
           file: Utils/frontend.Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: blecossois/mon-frontend:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Build and push backend Docker image
@@ -61,7 +61,7 @@ jobs:
           context: .
           file: Utils/backend.Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: : blecossois/mon-backend:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation for frontend docker image
